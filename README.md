@@ -1,16 +1,52 @@
-# test2
+# Flutter WordPress API Models
 
-A new Flutter project.
+A Flutter project that demonstrates WordPress API integration with comprehensive data models.
+
+## Features
+
+- **Complete WordPress API Models**: Category, Yoast SEO, Links, and Schema.org models
+- **Real FIG Data**: Integration with figeg.com WordPress API
+- **JSON Serialization**: Full fromJson/toJson support for all models
+- **Type Safety**: Null-safe Dart implementation
+- **Modular Design**: Separate model files for better organization
+
+## Models Included
+
+- **Category**: Main category model with all WordPress fields
+- **YoastHeadJson**: SEO data including robots, Open Graph, Twitter cards
+- **Links**: API links with target hints
+- **Schema**: Schema.org structured data
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project demonstrates how to create comprehensive Flutter models for WordPress API responses.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter SDK
+- Dart SDK
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Running the Project
+
+```bash
+flutter run
+```
+
+## Project Structure
+
+```
+lib/
+├── main.dart                 # Main application with UI
+└── models/
+    ├── category.dart         # Category model
+    ├── yoast_models.dart     # Yoast SEO models
+    ├── links_models.dart     # Links models
+    └── schema_models.dart    # Schema.org models
+```
+
+## Data Source
+
+This project uses real data from FIG (Fashion International Group) WordPress API:
+- Website: figeg.com
+- API: WordPress REST API
+- Data: Product categories with full SEO and Schema data

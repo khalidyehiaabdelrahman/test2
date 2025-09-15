@@ -1,0 +1,16 @@
+# Force GitHub to recognize this as a Dart project
+*.dart linguist-language=Dart
+
+# Ignore platform-specific files from language detection
+android/ linguist-vendored
+ios/ linguist-vendored
+linux/ linguist-vendored
+windows/ linguist-vendored
+macos/ linguist-vendored
+web/ linguist-vendored
+build/ linguist-vendored
+
+# Mark other files as generated
+*.g.dart linguist-generated
+*.freezed.dart linguist-generated
+*.gr.dart linguist-generated
