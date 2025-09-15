@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Models Demo',
       theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
       home: ModelsDemoPage(),
@@ -37,7 +38,6 @@ class _ModelsDemoPageState extends State<ModelsDemoPage> {
   }
 
   void _createSampleData() {
-    
     sampleCategory = Category(
       id: 1537,
       name: "Accessories",
@@ -49,7 +49,7 @@ class _ModelsDemoPageState extends State<ModelsDemoPage> {
       menuOrder: 0,
       count: 84,
       yoastHead:
-          "<!-- This site is optimized with the Yoast SEO plugin v25.4 - https:
+          "<!-- This site is optimized with the Yoast SEO plugin v25.4 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Accessories Archives - FIG</title>\n<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [Yoast SEO - Settings] menu and set up a template. -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:type\" content=\"article\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:title\" content=\"Accessories Archives - FIG\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:url\" content=\"https://figeg.com/category/women/accessories/\" class=\"yoast-seo-meta-tag\" />\n<meta property=\"og:site_name\" content=\"FIG\" class=\"yoast-seo-meta-tag\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" class=\"yoast-seo-meta-tag\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://figeg.com/category/women/accessories/\",\"url\":\"https://figeg.com/category/women/accessories/\",\"name\":\"Accessories Archives - FIG\",\"isPartOf\":{\"@id\":\"https://figeg.com/#website\"},\"breadcrumb\":{\"@id\":\"https://figeg.com/category/women/accessories/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://figeg.com/category/women/accessories/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://figeg.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Women\",\"item\":\"https://figeg.com/category/women/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Accessories\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://figeg.com/#website\",\"url\":\"https://figeg.com/\",\"name\":\"https://figeg.com/\",\"description\":\"Fashion International Group\",\"publisher\":{\"@id\":\"https://figeg.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://figeg.com/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://figeg.com/#organization\",\"name\":\"FIG\",\"url\":\"https://figeg.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://figeg.com/#/schema/logo/image/\",\"url\":\"https://figeg.com/wp-content/uploads/2024/07/cropped-fig-logo.png\",\"contentUrl\":\"https://figeg.com/wp-content/uploads/2024/07/cropped-fig-logo.png\",\"width\":2100,\"height\":844,\"caption\":\"FIG\"},\"image\":{\"@id\":\"https://figeg.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/share/16dKrxSyQo/?mibextid=wwXIfr\",\"https://www.instagram.com/figchiceg?igsh=ZHdnbXNyZHU2Z3B1\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
       yoastHeadJson: _createRealYoast(),
       links: _createRealLinks(),
     );
@@ -72,7 +72,7 @@ class _ModelsDemoPageState extends State<ModelsDemoPage> {
       ogLocale: "en_US",
       ogType: "article",
       ogTitle: "Accessories Archives - FIG",
-      ogUrl: "https:
+      ogUrl: "https://figeg.com/category/women/accessories/",
       ogSiteName: "FIG",
       twitterCard: "summary_large_image",
       schema: _createRealSchema(),
@@ -83,7 +83,7 @@ class _ModelsDemoPageState extends State<ModelsDemoPage> {
     return Links(
       self: [
         LinkItem(
-          href: "https:
+          href: "https://figeg.com/wp-json/wc/v3/products/categories/1537",
           targetHints: TargetHints(
             allow: ["GET", "POST", "PUT", "PATCH", "DELETE"],
           ),
@@ -91,13 +91,13 @@ class _ModelsDemoPageState extends State<ModelsDemoPage> {
       ],
       collection: [
         LinkItem(
-          href: "https:
+          href: "https://figeg.com/wp-json/wc/v3/products/categories",
           targetHints: null,
         ),
       ],
       up: [
         LinkItem(
-          href: "https:
+          href: "https://figeg.com/wp-json/wc/v3/products/categories/1500",
           targetHints: null,
         ),
       ],
@@ -106,34 +106,34 @@ class _ModelsDemoPageState extends State<ModelsDemoPage> {
 
   schema.Schema _createRealSchema() {
     return schema.Schema(
-      context: "https:
+      context: "https://schema.org",
       graph: [
         schema.GraphItem(
           type: "CollectionPage",
-          id: "https:
-          url: "https:
+          id: "https://figeg.com/category/women/accessories/",
+          url: "https://figeg.com/category/women/accessories/",
           name: "Accessories Archives - FIG",
-          isPartOf: schema.IsPartOf(id: "https:
+          isPartOf: schema.IsPartOf(id: "https://figeg.com/#website"),
           breadcrumb: schema.Breadcrumb(
-            id: "https:
+            id: "https://figeg.com/category/women/accessories/#breadcrumb",
           ),
           inLanguage: "en-US",
         ),
         schema.GraphItem(
           type: "BreadcrumbList",
-          id: "https:
+          id: "https://figeg.com/category/women/accessories/#breadcrumb",
           itemListElement: [
             schema.ItemListElement(
               type: "ListItem",
               position: 1,
               name: "Home",
-              item: "https:
+              item: "https://figeg.com/",
             ),
             schema.ItemListElement(
               type: "ListItem",
               position: 2,
               name: "Women",
-              item: "https:
+              item: "https://figeg.com/category/women/",
             ),
             schema.ItemListElement(
               type: "ListItem",
@@ -144,17 +144,17 @@ class _ModelsDemoPageState extends State<ModelsDemoPage> {
         ),
         schema.GraphItem(
           type: "WebSite",
-          id: "https:
-          url: "https:
-          name: "https:
+          id: "https://figeg.com/#website",
+          url: "https://figeg.com/",
+          name: "https://figeg.com/",
           description: "Fashion International Group",
-          publisher: schema.Publisher(id: "https:
+          publisher: schema.Publisher(id: "https://figeg.com/#organization"),
           potentialAction: [
             schema.PotentialAction(
               type: "SearchAction",
               target: schema.Target(
                 type: "EntryPoint",
-                urlTemplate: "https:
+                urlTemplate: "https://figeg.com/?s={search_term_string}",
               ),
               queryInput: schema.QueryInput(
                 type: "PropertyValueSpecification",
@@ -167,25 +167,25 @@ class _ModelsDemoPageState extends State<ModelsDemoPage> {
         ),
         schema.GraphItem(
           type: "Organization",
-          id: "https:
+          id: "https://figeg.com/#organization",
           name: "FIG",
-          url: "https:
+          url: "https://figeg.com/",
           logo: schema.Logo(
             type: "ImageObject",
             inLanguage: "en-US",
-            id: "https:
+            id: "https://figeg.com/#/schema/logo/image/",
             url:
-                "https:
+                "https://figeg.com/wp-content/uploads/2024/07/cropped-fig-logo.png",
             contentUrl:
-                "https:
+                "https://figeg.com/wp-content/uploads/2024/07/cropped-fig-logo.png",
             width: 2100,
             height: 844,
             caption: "FIG",
           ),
-          image: schema.Image(id: "https:
+          image: schema.Image(id: "https://figeg.com/#/schema/logo/image/"),
           sameAs: [
-            "https:
-            "https:
+            "https://www.facebook.com/share/16dKrxSyQo/?mibextid=wwXIfr",
+            "https://www.instagram.com/figchiceg?igsh=ZHdnbXNyZHU2Z3B1",
           ],
         ),
       ],
