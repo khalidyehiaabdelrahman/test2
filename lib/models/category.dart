@@ -30,7 +30,7 @@ class Category {
     required this.links,
   });
 
-  // تحويل من JSON
+  
   factory Category.fromJson(Map<String, dynamic> json) {
     return Category(
       id: json['id'] ?? 0,
@@ -48,7 +48,7 @@ class Category {
     );
   }
 
-  // تحويل لـ JSON
+  
   Map<String, dynamic> toJson() {
     return {
       'id': id,
